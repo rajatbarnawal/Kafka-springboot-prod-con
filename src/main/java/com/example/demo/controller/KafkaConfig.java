@@ -24,6 +24,7 @@ import com.google.gson.Gson;
 
 
 @Configuration
+
 @EnableKafka
 public class KafkaConfig {
 
