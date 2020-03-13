@@ -15,6 +15,7 @@ import com.example.demo.model.MoreSimpleModel;
 public class KafkaMoreSimpleController {
 	@Autowired
 	
+	
     private KafkaTemplate<String, MoreSimpleModel> kafkaTemplate2;
 	
 	@PostMapping("/v2")
