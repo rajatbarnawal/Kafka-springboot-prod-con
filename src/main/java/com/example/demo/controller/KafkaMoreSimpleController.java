@@ -19,6 +19,7 @@ public class KafkaMoreSimpleController {
 	@PostMapping("/v2")
     public void post(@RequestBody MoreSimpleModel moreSimpleModel){
          //kafkaTemplate.send("myTopic2", jsonConverter.toJson(moreSimpleModel));
+	
 		kafkaTemplate2.send("myTopic2", moreSimpleModel);
     }
 	
@@ -26,5 +27,5 @@ public class KafkaMoreSimpleController {
 	    public void consumeJson(MoreSimpleModel moreSimpleModel) {
 	    	System.out.println("Consumed Json Message : " + moreSimpleModel);
 	    }
-
+ 
 }
