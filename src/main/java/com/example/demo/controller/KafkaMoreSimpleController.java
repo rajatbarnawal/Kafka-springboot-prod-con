@@ -19,6 +19,8 @@ public class KafkaMoreSimpleController {
 	@PostMapping("/v2")
     public void post(@RequestBody MoreSimpleModel moreSimpleModel){
         //kafkaTemplate.send("myTopic2", jsonConverter.toJson(moreSimpleModel));
+		
+		
 		kafkaTemplate2.send("myTopic2", moreSimpleModel);
     }
 	
