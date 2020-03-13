@@ -26,5 +26,5 @@ public class KafkaMoreSimpleController {
 	    public void consumeJson(MoreSimpleModel moreSimpleModel) {
 	    	System.out.println("Consumed Json Message : " + moreSimpleModel);
 	    }
-
+ 
 }
